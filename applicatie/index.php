@@ -1,19 +1,32 @@
+<?php
+
+
+//database verbinden
+include_once("./includes/db_connectie.php");
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Pizzeria Sole Machina</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>It Works!</h1>
-    <?php echo('Hallo WT\'er, de webserver is online en PHP werkt.'); ?>
-    <br>
-    <br>
-    Alle technische informatie over je webserver vind je hier: <a href="phpinfo.php">http://<?=$_SERVER['HTTP_HOST']?>/phpinfo.php</a>
-    <br>
-    <br>
-    Een voorbeeld van een pagina die gegevens uit de database haalt vind je hier: <a href="componist-aantalstukken.php">http://<?=$_SERVER['HTTP_HOST']?>/componist-aantalstukken.php</a>
+    <?php require("./header.php"); ?>
+    <main>
+        <section class="intro">
+            <div class="left-section">
+                <h2>Welkom bij ambachtelijke Pizzeria Sole Machina</h2>
+                <p>Bestel gemakkelijk en snel online! Al onze producten bevatten GEEN varkens- of paardenvlees, 100% halal</p>
+            </div>
+            <div class="right-side">
+                <img src="./images/pizza.jpg" />
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
